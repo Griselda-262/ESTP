@@ -88,6 +88,14 @@ void loop()
   Serial.println(distance4);
   Serial.println("cm");
   delay(200);
+  if ((distance<8)||(distance1<8)||(distance2<8)||(distance3<8)||(distance4<8))
+  {
+    digitalWrite(LED,1);
+  }
+    else{
+    digitalWrite(LED,0);
+  }
+  
 }
 
   
